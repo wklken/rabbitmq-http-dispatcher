@@ -1,0 +1,21 @@
+start.sh
+
+#!/bin/bash
+
+PROJECT_PATH=/home/
+
+export PYTHONPATH=$PROJECT_PATH
+
+/usr/bin/python2.7 run.py start $PROJECT_PATH/logs > $PROJECT_PATH/logs/process.log 2>&1
+
+
+stop.sh
+
+#!/bin/bash
+
+PROJECT_PATH=/home/
+
+export PYTHONPATH=$PROJECT_PATH
+
+/usr/bin/python2.7 run.py stop $PROJECT_PATH/logs > $PROJECT_PATH/logs/process.log 2>&1
+
